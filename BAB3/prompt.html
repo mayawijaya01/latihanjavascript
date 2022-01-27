@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>menggunakan prompt</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var nama = prompt("Siapa nama Anda?","");
+        alert("Selamat berjuang yaaa    " + nama);
+        var usia = prompt("Berotahu usia Anda.", "Usia Anda:  ");
+        if (usia== null) {//Jika pengguna mengklik tombol Cancel
+            alert("Tidak mau memberi tahu usai Anda yaa?");}
+        else {
+            alert(usia+" masih muda");
+        }
+        alert(prompt("Darimana Anda berasal?",""))
+    </script>
+</body>
+</html>
