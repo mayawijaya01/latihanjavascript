@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>closure</title>
+    <script type="text/javascript">
+        function lukis(tipe, warna) {
+            var str = "Bunga " + tipe + " Berwarna " + warna;
+            var beritahu = function () {
+                document.write("<big>"+str+".<big/><br/>");
+            }
+            return beritahu;
+        }
+    </script>
+</head>
+<body>
+<h2> Menguji sebuah clouser</h2>
+<script type="text/javascript">
+    var katakan1 = lukis("mawar","merah");
+    var  katakan2 = lukis("melati","putih");
+    katakan1();
+    katakan2();
+</script>
+
+</body>
+</html>

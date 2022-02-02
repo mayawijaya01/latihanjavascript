@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nilai Balik</title>
+    <script type="text/javascript">
+        function kuantitas(km, bensin) {
+            return km/bensin;
+        }
+    </script>
+</head>
+<body bgcolor="aqua">
+<font face = "arial" size="+1">
+    <div align="center">
+        <img src="mobil.jpg">
+        <script>
+            var jarak = eval (prompt("Berapa km yang telah Anda lalui? ", ""));
+            var banyak = eval(prompt("Berapa liter bensin yang Anda habiskan?",""));
+            var laju = kuantitas(jarak, banyak);
+            alert("kuantitas: " + laju + " km per liter. \n");
+        </script>
+    </div>
+</font>
+
+</body>
+</html>

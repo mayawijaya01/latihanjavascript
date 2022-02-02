@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fungsi sebagai variabel</title>
+    <script type="text/javascript">
+        var salam = function (pengunjung) {
+            pesan = " salam dan sukses untuk Anda " + pengunjung +" !";
+            return pesan;
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var hormat = salam("Andi");
+        document.write(hormat + "<br/>");
+        var hallo = salam;
+        var selamatDatang = salam;
+        document.write(hallo("anak muda") + "<br/>");
+        document.write(selamatDatang("tuanku") + "Apa Kabar Anda? <br/>");
+    </script>
+</body>
+</html>
