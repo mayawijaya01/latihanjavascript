@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>latihan4</title>
+
+    <script>
+        function ubahWarna(type) { //menggunakan fungsi dan event contoh4
+            if(type === 1){
+
+            document.bgColor= "yellow";
+            }else{
+
+            document.bgColor= "green";
+            }
+        }
+        // function ubahWarna2() {
+        //     document.bgColor = "green"
+        // }
+    </script>
+</head>
+<body>
+<h2>pilih warna</h2>
+<form>
+    <input type="button"
+    value="tekan disini untuk warna latar kuning"
+    onclick="ubahWarna(1);"/>
+    <br/>
+    <br/>
+    <input type="button"
+    value="tekan disini untuk warna latar hijau"
+    onclick="ubahWarna(2);"/>
+</form>
+</body>
+</html>
