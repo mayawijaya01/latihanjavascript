@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh5</title>
+    <script>
+        function Buku(judul, penulis, penerbit) {
+            this.nomorhal=0;
+            this.judul=judul;
+            this.penulis=penulis;
+            this.penerbit=penerbit;
+            this.maju=majuHal;
+            this.mundur=mundurHal;
+        }
+        function majuHal() {
+            this.nomorhal++;
+            return this.nomorhal;
+        }
+        function mundurHal() {
+            this.nomorhal--;
+            return this.nomorhal;
+        }
+    </script>
+</head>
+<body>
+<script>
+    var bukuKu=new Buku("Pemrograman JavaScript", "Maya Wijaya", "Penerbit Tata");
+    bukuKu.nomorhal=5;
+    document.write("<b>"+bukuKu.judul+
+    "<br/>"+bukuKu.penulis+
+    "<br/>"+bukuKu.penerbit+
+    "<br/>Halaman sekarang: "+bukuKu.nomorhal);
+    document.write("<br/>Halaman dimajukan: ");
+    for (i=0; i<3;i++){
+        document.write("<br/>"+bukuKu.maju()); // Memajukan sebuah halaman
+    }
+    document.write("<br/>Halaman dimundurkan: ");
+    for (;i>0;i--){
+        document.write("<br/>"+bukuKu.mundur()); // Memundurkan sebuah halaman
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh6</title>
+    <script>
+        function jarak(r,t) {
+            this.kec=r;
+            this.wakt=t;
+            this.hitung=function ()
+            {return r*t;} // anonim
+        }
+    </script>
+</head>
+<body>
+<script>
+    var perjalanan1= new jarak(50, 1.5);
+    var perjalanan2= new jarak(75, 3.2);
+    alert("jarak perjalanan1: "+perjalanan1.hitung());
+    alert("jarak perjalanan2: "+perjalanan2.hitung());
+</script>
+</body>
+</html>
