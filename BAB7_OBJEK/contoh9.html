@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh9</title>
+    <script>
+        function buku(judul, pengarang, penerbit) {
+            this.judul= judul;
+            this.pengarang=pengarang;
+            this.penerbit=penerbit;
+            this.tampil=tampil;
+        }
+        function tampil() {
+            with (this){
+                var info = "judul: "+ judul;
+                info+="\n pengarang: "+ pengarang;
+                info+="\n penerbit: "+ penerbit;
+                alert(info);
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <script>
+        var bukuAnak = new buku("ini ceritanya judul bukuanak", "maya", "santi");
+        var bukuDewasa = new buku("pemrog javascript", "Andi dkk", "cetak joko");
+        bukuAnak.tampil();
+        bukuDewasa.tampil();
+    </script>
+</body>
+</html>

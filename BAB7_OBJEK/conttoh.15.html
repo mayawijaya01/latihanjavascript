@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh15</title>
+    <script>
+        function buku(judul, pengarang) {
+            this.judul=judul;
+            this.pengarang=pengarang;
+        }
+    </script>
+</head>
+<body>
+<script>
+    buku.prototype.penerbit="geo penerbit";
+    Object.prototype.kategori="buku cerita";
+    var riwayat=new buku("dongeng sebelum tidur","samantha");
+    document.write("Nilai kategori "+ Object.prototype.kategori+"<br/>");
+    if (riwayat.constructor==buku){
+        document.write("properti constructor dari buku didefinisikan sebagai "+riwayat.constructor+"<br/>")
+    }
+    if (riwayat.hasOwnProperty("pengarang")){
+        document.write("objek memiliki properti pengarang.<br/>");
+    }
+    if (buku.prototype.isPrototypeOf(riwayat)){
+        document.write("buku adalah prototype dari objek riwayat <br/>");
+    }
+    if (riwayat instanceof buku){
+        document.write("riwayat adalah sebuah instans dari buku <br/>");
+    }
+    if (riwayat instanceof Object){
+        document.write("riwayat adalah sebuah instans dari objek. <br/>")
+    }
+
+</script>
+</body>
+</html>

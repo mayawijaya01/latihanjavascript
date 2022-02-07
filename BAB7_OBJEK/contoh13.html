@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh13</title>
+    <script>
+        function buku(judul, pengarang) {
+            this.judul=judul;
+            this.pengarang=pengarang;
+        }
+    </script>
+</head>
+<body>
+<script>
+    var buku1 = new buku("pro csss", "santi wijaya");
+    var buku2= new buku("jago html", "veronica");
+    Object.prototype.kategori="pendidikan"
+    buku.prototype.penerbit="hendra cetakan";
+    document.write(buku1.judul + " diterbitkan oleh "+ buku1.penerbit + " dengan kategori "+buku1.kategori +"<br/>");
+    document.write(buku2.judul+" diterbitkan oleh "+buku2.penerbit + " dengan kategori "+buku2.kategori );
+</script>
+</body>
+</html>

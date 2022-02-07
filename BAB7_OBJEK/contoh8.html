@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh8</title>
+    <script>
+        var Mobil = {
+                pembuat: undefined,
+                tahun: 2013,
+                harga: undefined,
+                pemilik: {
+                    nama: "Maya wijaya",
+                    no_sel: "01-05-92-28-12",
+                    alamat: {
+                        jalan: "gang asem",
+                        kota: "pringsewu",
+                        propinsi: "Lampung"
+                    }
+                },
+
+            dealer : "Honda",
+            tampil : function () {
+                detil = "Pembuat: " + Mobil.pembuat + "\n";
+                detil += "tahun: " + Mobil.tahun + "\n";
+                detil += "Harga: " + Mobil.harga + "\n";
+                detil += "Pemilik: " +
+                    Mobil.pemilik.nama + "\n";
+                alert(detil);
+            }
+        };
+    </script>
+</head>
+<body>
+<script>
+    Mobil.pembuat = "Honda Brio";
+    Mobil.tahun = 2014;
+    Mobil.harga = 200000000;
+    Mobil.tampil();
+</script>
+</body>
+</html>

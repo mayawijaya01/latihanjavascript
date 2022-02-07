@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>conth10</title>
+    <script>
+         function buku(judul, pengarang, penerbit) {
+             this.judul=judul;
+             this.pengarang=pengarang;
+             this.penerbit=penerbit;
+             this.tampil=tampil;
+         }
+         function tampil(obj, nama) {
+             var hasil= "";
+             for (var prop in obj){
+                 hasil+= nama +"."+prop+"="+obj[prop]+"<br/>";
+             }
+             return hasil;
+         }
+    </script>
+</head>
+<body>
+<script>
+    bukuKu=new buku("pemrograman javascript", "Mayawijaya", "joko cetak");
+    document.write("<br/><b>"+bukuKu.tampil(bukuKu, "bukuKu"));
+</script>
+</body>
+</html>
