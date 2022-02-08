@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh6</title>
+</head>
+<body>
+<h2>sebuah array dengan indeks string</h2>
+<script>
+    var propinsi = new Array();
+    propinsi["SUMUT"]="Sumatra Utara";
+    propinsi["SUMBAR"]="Sumatra Barat";
+    propinsi["SUMSEL"]="Sumatra Selatan";
+    for (var i in propinsi)
+    {
+        document.write("Indeks: <em> "+ i);
+        document.write(".</em> Nilai: <em>"+propinsi[i]+ ".</em><br/>")
+    }
+</script>
+</body>
+</html>

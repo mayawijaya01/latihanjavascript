@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh14</title>
+    <script>
+        function buku(judul, pengarang, harga) {this.judul=judul; this.pengarang=pengarang; this.harga=harga; this.tampil=tampilProp;}
+        function tampilProp() {var hasil = ""; for (var i in this){hasil +=i + " = " +this[i]+"<br/>"}return hasil;}
+    </script>
+</head>
+<body>
+<script>
+    buku.prototype.tambahPajak=function tambahPajak() {this.harga *=1.18; return(this.harga.toFixed(2));}
+    var bukuTerkenal= new buku("ini buku terkenal", "veronica",30000);
+    var bukuKu = new buku("javascript", "santi", 25000);
+    document.write("<br/>"+bukuTerkenal.tampil+"<br/>>");
+    document.write("<br/>"+bukuKu.tampil+"<br/>>");
+    document.write("termasuk pajak, \""+bukuTerkenal.judul+"\" harga Rp."+bukuTerkenal.tambahPajak()+"<br/>");
+    document.write("termasuk pajak, \""+bukuKu.judul+"\" harga Rp."+bukuKu.tambahPajak()+"<br/>");
+</script>
+</body>
+</html>

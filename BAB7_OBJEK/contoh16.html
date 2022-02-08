@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh16</title>
+    <script>
+        function hewan() {
+            var pemilik = "samantha wijaya";
+            var gender=undefined;
+            this.setPemilik=function (who) {pemilik=who;};
+            this.getPemilik=function () {return pemilik;}
+            this.setgender=function (seks) {gender=seks;}
+            this.getgender=function () {return gender;}
+        }
+        function kucing() {}
+        kucing.prototype=new hewan();
+        kucing.prototype.constructor=kucing;
+        kucing.prototype.bicara=function (bicara)
+        { return("meong......");};
+
+        function anjing() {}
+        anjing.prototype=new hewan();
+        anjing.prototype.constructor=anjing;
+        anjing.prototype.bicara=function (bicara)
+        { return("guukk......");};
+    </script>
+</head>
+<body>
+<script>
+    var kucing=new kucing;
+    var anjing=new anjing;
+    kucing.setPemilik("geonathan");
+    kucing.setgender("betina");
+    anjing.setgender("jantan");
+    document.write("kucing "+ kucing.getgender()+" dimiliki oleh "+ kucing.getPemilik()+
+        " suara kucing "+ kucing.bicara());
+    document.write("<br/> anjing "+ anjing.getgender()+ "" + " dimiliki oleh "+ anjing.getPemilik() +
+        " suara anjing " + anjing.bicara());
+</script>
+</body>
+</html>

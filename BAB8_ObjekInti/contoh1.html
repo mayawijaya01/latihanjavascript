@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh1</title>
+    <h2>sebuah Array memuat buku</h2>
+    <script>
+        var buku = new Array(6);
+        buku[0]="buku ajax";
+        buku[1]="buku cinta";
+        buku[2]="buku mtk";
+        buku[3]="buku ips";
+        buku[4]="buku js";
+        buku[5]="buku php";
+    </script>
+</head>
+<body>
+<script>
+    for (var i in buku)
+    {   document.write("buku [" + i + "]"+ buku[i]+"<br/>"); }
+</script>
+</body>
+</html>
