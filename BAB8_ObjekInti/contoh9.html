@@ -12,10 +12,11 @@
     var mahasiswa = new Array();
     mahasiswa["nama"]= "maya santi";
     mahasiswa["matakuliah"]= new Array("logika","aljabar","trigonometri");
-    mahasiswa["telphone"]=new Array("08577563695","734682368569");
-    document.write("nama mahasiswa: "+mahasiswa.["name"]+".<br/>");
+    mahasiswa["telepon"]=new Array("08577563695","734682368569");
+    document.write("nama mahasiswa: "+mahasiswa["nama"]+".<br/>");
     document.write("matakuliah: "+mahasiswa["matakuliah"]+"<br/>");
-    document.write("mata kuliah kesukaan: "+)
+    document.write("mata kuliah kesukaan: "+mahasiswa["matakuliah"][2]+"<br/>");
+    document.write("nomer hp: "+mahasiswa["telepon"][0]+".<br/>");
 </script>
 </body>
 </html>
