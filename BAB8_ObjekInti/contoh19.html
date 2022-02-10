@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh 19</title>
+
+    <script>
+        // memodifikasi objek Date
+        function hariSeminggu()
+        {
+            var skrg = this.getDay();
+            var nama = new Array(7);
+            nama[0] = "minggu";
+            nama [1] = "senin";
+            nama[2] = "selasa";
+            nama [3] = "rabu";
+            nama [4] = "kamis";
+            nama [5] = "jumat";
+            nama[6] = "sabtu";
+            return(nama[skrg]);
+        }
+        Date.prototype.DayOfWeek = hariSeminggu;
+    </script>
+</head>
+<body>
+<script>
+    var hariIni = new Date();
+    document.write("hari ini:  "+hariIni.DayOfWeek()+".<br/>");
+</script>
+</body>
+</html>
