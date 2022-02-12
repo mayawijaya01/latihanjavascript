@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body bgcolor="green">
+<h2>Bekerja dengan metode-metode pemanipulasi string</h2>
+<script type="text/javascript">
+    function tag_pisah()
+    {
+     document.write("<br />");
+    }
+    document.write("<h3>");
+    var str1 = new String("Selamat malam tahun baru.....");
+    document.write("Di dalam string: <em>"+str1);
+    document.write("</em> Huruf 'm' pertama pada posisi "+ str1.indexOf("m") );
+    tag_pisah();
+    document.write("huruf 'm' terakhir pada posisi "+ str1.lastIndexOf("m"));
+    tag_pisah();
+    document.write("<em> str1.substr(4.5)</em> menghasilkan<em> "+str1.substr(4,5));
+    tag_pisah();
+    document.write(str1.toUpperCase());
+    document.write("<h3>");
+</script>
+</body>
+</html>

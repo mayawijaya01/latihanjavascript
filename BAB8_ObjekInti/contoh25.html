@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh 25</title>
+    <script type="text/javascript">
+        //memodifikasi fungsi - fungsi string
+        function hurufBesar() {
+            var str=this.bold().fontcolor("white").toUpperCase().fontsize("22");
+            return(str);
+        }
+        String.prototype.hurufBesar = hurufBesar;
+    </script>
+</head>
+<body bgcolor="black">
+<div align="center">
+    <script type="text/javascript">
+        var str="awasi langkah anda!!";
+        document.write(str.hurufBesar() + "<br/>");
+    </script>
+</div>
+
+</body>
+</html>
