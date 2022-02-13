@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh 5</title>
+</head>
+<body bgcolor="#20b2aa">
+<h3><u>tipe - tipe mime--firefox</u></h3>
+<b>
+    <script>
+        for (var i =0; i< navigator.mimeTypes.length; i++)
+        {
+            if (navigator.mimeTypes[i].enabledPlugin != null)
+            {
+                document.write("<br /><font size='+1'>"+navigator.mimeTypes[i].type+"<br />");
+                document.write("<font size='-1'>"+"nama plugin aktif:  <em>"+navigator.mimeTypes[i].enabledPlugin.name+"<br />");
+                document.write("</em> penjelasan:  "+ "<em>"+navigator.mimeTypes[i].description+"<br /></em>suffixes:  "+"</em>"
+                +navigator.mimeTypes[i].suffixes+"<br />");
+            }
+        }
+    </script>
+</b>
+</body>
+</html>
