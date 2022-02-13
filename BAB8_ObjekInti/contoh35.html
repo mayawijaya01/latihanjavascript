@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh 36</title>
+</head>
+<body>
+<h2>Menggunakan kata kunci with</h2>
+<br />
+<script>
+    var nama_anda = prompt("siapa nama anda?: ","")
+    with (nama_anda)
+    {
+        document.write("selamat datang "+nama_anda+" ke toko kami!! <br />");
+        document.write("Nama anda memiliki panjang "+ length + " karakter. <br />");
+        document.write("Nama anda dengan semua huruf besar " + toUpperCase() +"<br />");
+        document.write("Nama anda dengan semua huruf kecil "+ toLowerCase() + "<br />");
+    }
+</script>
+</body>
+</html>

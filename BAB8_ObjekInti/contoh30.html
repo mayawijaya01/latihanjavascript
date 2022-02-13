@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 30</title>
+</head>
+<body bgcolor="aqua">
+<font face="arial" size="+1">
+    Metode pencari dan pengganti <br />
+    <small>
+        <script type="text/javascript">
+            var str_alamat = "Mayawijaya@nama-server.org";
+            document.write("Sting asli adalah:  "+str_alamat + "<br />");
+            document.write("string baru menjadi:  "+str_alamat.replace("wijaya","santi")+"<br />");
+            var indeks = str_alamat.search("server");
+            document.write("Metode search () menemukan\" server\" pada posisi" + indeks + "<br />");
+            var substrku=str_alamat.substr(indeks, 6);
+            document.write("setelah penggatian \"server\"dengan\"POP\"<br />");
+            document.write(str_alamat.replace(substrku, "POP")+"<br />");
+        </script>
+    </small>
+</font>
+
+</body>
+</html>
