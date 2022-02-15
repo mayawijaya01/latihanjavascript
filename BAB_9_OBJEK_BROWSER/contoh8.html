@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh 8</title>
+    <script>
+        function arah()
+        {
+            winObj=window.open("tempatku.html","tempatku",
+            "width=200","height=300", "resizeble=no");
+            winObj.moveTo(0,0);
+            winObj.focus();
+            parent.window.moveTo(215,0);
+            parent.window.resizeTo(400,400);
+        }
+        function tutupJendela()
+        {
+         winObj.close();
+        }
+    </script>
+</head>
+<body bgcolor="orange">
+<h2>anda pindah</h2>
+ke arah - arah yang ditetapkan,
+<br />
+klik tombol ini
+<form>
+    <input type="button"
+    value="Arah - arah sederhana"
+    onclick="arah();">
+    <p>ketika anda siap menutup jendela, klik di sini</p>
+</form>
+<a href="javaScript:tutupJendela()">Tutup Jendela</a>
+</body>
+</html>

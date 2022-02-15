@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh 9</title>
+    <script>
+        function ubahStatusBar()
+        {
+         window.status="Lihat saya sekarang sebelum saya menghilang";
+         timeout=setTimeout("window.status=''", 6000);
+         // alert(timeout);
+        }
+    </script>
+</head>
+<body><div align="center">
+    <font face="arial" size="3" color="blue">
+        Timeout ditetapkan 6 detik.
+        <br />
+        <img src="alarm.jpg" border="2">
+        <p>
+            amati status bar
+            <br />
+            <form>
+        <input type="button"
+        value="klik di sini"
+        onclick="ubahStatusBar();">
+    </form>
+        </p>
+    </font>
+</div>
+
+</body>
+</html>
