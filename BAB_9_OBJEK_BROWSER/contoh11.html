@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh 11</title>
+    <script>
+        var hariIni= new Date();
+        var tahun = hariIni.getFullYear();
+        var waktuDepan = new Date("December 31," + tahun);
+        var selisih = waktuDepan.getTime() - hariIni.getTime();
+        // jumlah milidetik
+        var hari = Math.floor(selisih / (1000*60*60*24));
+        // konversi ke hari
+        var str=
+            "Tinggal "+hari+" lagi berbelanja dengan diskon besar sebelum Tahun Baru! ";
+
+        function mulai()
+        {
+            str = str.substring(1, str.length) + str.substring(0,1);
+            document.title=str;
+            window.status=str;
+        }
+    </script>
+</head>
+<body onload="mulai()">
+
+<h3> Amati title bar dan status bar!! </h3>
+
+        <img src="new_year.jpg">
+
+</body>
+</html>

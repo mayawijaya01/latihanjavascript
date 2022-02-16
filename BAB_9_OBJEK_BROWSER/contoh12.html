@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh 12</title>
+    <script>
+        // menciptakan jedela baru dengan citra.
+        winObj = window.open("new_year.gif", "tahunbaru",
+                "width=350, height=292, resizeble=no");
+        winObj=moveTo(0,0);
+        winObj=focus();
+        var pospiksel=0;
+        var lebarCitra=1096;
+        var langkahPiksel = 2;
+        var timeout;
+
+        function mulaiBergerak()
+        {
+            if (pospiksel<= (lebarCitra - 350))
+            {
+                pospiksel+= langkahPiksel;
+                winObj.scrollTo(pospiksel,0);
+                timeout=setTimeout(mulaiBergerak,20);
+            }
+        }
+        function bergerakLagi()
+        {
+         pospiksel=0;
+         mulaiBergerak();
+        }
+
+        function berhentiDisini()
+        {
+         clearTimeout(timeout);
+        }
+
+        function tutupJendela()
+        {
+         winObj.close();
+        }
+    </script>
+</head>
+<body bgcolor="#20b2aa">
+<font face="arial" size="4">
+    <b> <br />
+        <div align="center">
+            jendela dengan tahun baru
+            <form>
+                <input type="button"
+                value="Mulai bergerak"
+                onclick="mulaiBergerak();">
+
+                <input type="button"
+                value="mulai lagi"
+                onclick="bergerakLagi();">
+            </form>
+        </div>
+<font size="=-1">
+    <p>ketika anda siap untuk menutup jendela, klik di sini <br />
+        <a href="javaScript: tutupJendela()">tutup jendela </a>
+</font>
+</body>
+</html>
