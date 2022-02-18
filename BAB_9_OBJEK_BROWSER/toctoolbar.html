@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>menu bar</title>
+    <script>
+        var urlKu;
+        function bukaSitus(url)
+        {
+         parent.main.location = url;
+         urlKu=url;
+        }
+
+        function sembunyikan()
+        {
+         if (! urlKu)
+         {parent.location = "tocmain.html";}
+         else {parent.location=urlKu;}
+        }
+    </script>
+</head>
+<body bgcolor="aqua">
+<p><a href="javaScript:bukuSitus('tocmain.html');">Beranda</a></p>
+<p><a href="JavaScript:bukuSitus('https://www.kompas.com/');">Halaman 1</a></p>
+<p><a href="javaScript:bukuSitus('http://biobses.com');">Halaman 2</a></p>
+<p><a href="javaScript:bukuSitus('http://detik.com');">Halaman 3</a></p>
+<p><a href="javaScript:sembunyikan();">Sembunyikan Menu </a></p>
+</body>
+</html>

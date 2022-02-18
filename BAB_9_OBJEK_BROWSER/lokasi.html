@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lokasi html</title>
+    <script>
+        function muatHalaman(alamatURL) {
+            parent.frames[1].location.href = alamatURL;
+        }
+    </script>
+</head>
+<body>
+<big>
+    <form name="form1" id="form1">
+        <input type="button"
+        value="Jual Baju"
+        onclick="muatHalaman('https://agenbajumurah.com/');">
+        <input type="button"
+        value="Kompas"
+        onclick="muatHalaman('http://kompas.com');">
+    </form>
+</big>
+</body>
+</html>
