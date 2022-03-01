@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh 4</title>
+</head>
+<body>
+<big>
+<form name="form1" id="form1"
+      method="get" action="uji_form.php">
+    pilih warna: <br/>
+    <input type="radio" name="warna" id="tombolradio1"
+        value="hijau"/>
+    <label for="tombolradio1">Hijau</label>
+    <br/>
+    <input type="radio" name="warna" id="tombolradio2"
+           value="biru"/>
+    <label for="tombolradio2">Biru</label>
+    <br/>
+    <input type="radio" name="warna" id="tombolradio3"
+           value="kuning"/>
+    <label for="tombolradio3">Kuning</label>
+    <br/>
+    <br/>
+    <input type="submit" value="kirim ke server"/>
+</form>
+    <script>
+        var rb1=document.getElementById("tombolradio1");
+        var rb2=document.getElementById("tombolradio2");
+        var rb3=document.getElementById("tombolradio3");
+        document.write("menggunakan atribut id: <br/>");
+        document.write(rb1.value+"<br/>");
+        document.write(rb2.value+"<br/>");
+        document.write(rb3.value+"<br/>");
+    </script>
+</big>
+</body>
+</html>
