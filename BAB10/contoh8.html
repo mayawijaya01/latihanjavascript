@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 8</title>
+</head>
+<body><big><strong>
+<form action="uji_form.php" method="post"><p>
+    <fieldset><legend>Semua tentang Anda</legend>
+    <p>
+    Masukan nama Anda di sini:
+    <input type="text" name="stringnama" size="50"/>
+    </p>
+    <b>Pilih Tempat Kerja:</b><br/>
+    <input type="checkbox" name="tempat"
+        value="JKT"> Jakarta <br/>
+    <input type="checkbox" name="tempat"
+           value="MDN"> Medan <br/>
+    <input type="checkbox" name="tempat"
+           value="BDG"> Bandung <br/>
+    <br/>
+    <input type="radio" name="status" value="senior" id="senior"/>
+    <label for="senior">senior</label>
+    <br/>
+    <input type="radio" name="status" value="dewasa" id="dewasa"/>
+    <label for="senior">dewasa</label>
+    <br/>
+    <input type="radio" name="status" value="anak" id="anak"/>
+    <label for="senior">anak</label>
+    <br/>
+    <br/>Pilih Tempat Liburan Anda: <br/>
+    <select multiple name="location" />
+        <option selected value="toba"> Danau Toba</option>
+        <option  value="bali"> Bali</option>
+        <option  value="senggigi"> Senggigi</option>
+        <option  value="raja"> Raja Ampat</option>
+    </select>
+    <p>
+</fieldset>
+    <br/>
+    <input type="submit" value="submit"/>
+    <input type="reset" value="clear"/>
+</form>
+</strong>
+</big>
+</body>
+</html>
