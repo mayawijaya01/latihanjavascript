@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 12</title>
+    <script>
+        function resetSemua () {
+            if (confirm("Apakah Anda ingin mereset form menjadi" + "nilai - nilai defaultnya? ")){
+                return true;
+            }
+           else {
+            return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="uji_form.php"
+      method="post"
+      onreset="return resetSemua();"/>
+    Masukan id Anda:
+    <input type="text"
+        name="kotakteks"
+        value="Nama? "
+        id="kotakteks"/>
+<p>Ketikan Password Anda:
+    <input type="password"
+        name="rahasia"
+        id="rahasia"/>
+    <p></p>
+    <input type="submit"/>
+    <input type="reset"
+        value="Reset Form"/>
+</p>
+</form>
+</body>
+</html>
