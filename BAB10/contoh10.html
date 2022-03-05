@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 10</title>
+    <script>
+        function siapKirim() {
+            if (confirm("Apakah Anda siap mengirim form")) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="uji_form.php"
+      method="post">
+    Masukan id pengguna:
+    <input type="text"
+        name="kotakteks"
+        value=""/>
+    <br/>
+    Ketikkan password Anda:
+    <input type="password"
+        name="rahasia"/>
+    <p></p>
+    <input type="submit"
+        onclick="siapKirim();"/>
+</form>
+</body>
+</html>
