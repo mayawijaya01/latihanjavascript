@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 15</title>
+</head>
+<body>
+<b>
+    <form name=formKu
+          action="uji_form.php"
+          method="post">
+    <p>
+        <fieldset><legend><big>Semua tentang Anda</legend>
+        <p><font size=3 color="blue">
+            Ketikan nama Anda di sini:
+            <input type="text"
+                name="namaString"
+                size="50"/>
+    <p>
+        Anda bercerita tentang diri Anda di sini:
+        <br/>
+        <textarea name="komentar"
+                  align="left"
+                  rows="5" cols="50">Saya dilahirkan di.....
+        </textarea>
+    <p>
+        <b>Pilih tempat kerja:</b><br/>
+            <input type="checkbox" name="tempat"
+                   value="JKT"> Jakarta <br/>
+            <input type="checkbox" name="tempat"
+                   value="MDN"> Medan <br/>
+            <input type="checkbox" name="tempat"
+                   value="BDG"> Bandung <br/>
+        <p></fieldset>
+    </form>
+    <a>
+    <a href="#" onclick="JavaScript: formKu.submit();"/>
+        klik di sini untuk mengirim form ini </a>
+    <p>
+    <a href="#" onclick="JavaScript: formKu.reset();"/>
+        klik di sini untuk mereset form ini </a>
+</body>
+</html>
