@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 19</title>
+    <script>
+        function verifikasi(pw) {
+            if (pw.value == "masuk"){
+                alert("pintu terbuka sekarang!!");
+            }
+            else {
+                alert("Maaf, Anda tidak bisa masuk. silahkan pergi.");
+            }
+        }
+    </script>
+</head>
+<body bgcolor="#ff00ff">
+<div align="center">
+    <h2>Selamat datang di ruangan rahasia</h2>
+    <img src="ruang%20rahasia.jpg" height="50%" width="50%">
+    <br/>
+    Untuk masuk, password diperlukan:
+    <br/>
+    <form name="form1" id="form1">
+        <input type="password" name="bidangpassword" size="30" onblur="return verifikasi(this)"/>
+        <input type="button" value="klik untuk verifikasi"/>
+    </form>
+</div>
+</body>
+</html>
