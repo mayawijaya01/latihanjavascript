@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 24</title>
+    <script>
+        function ubahWarnaLatar(f) {
+            for (var i=0; i<f.warna.length; i++){
+                if (f.warna[i].checked){
+                    document.bgColor=f.warna[i].value;
+                }
+            }
+        }
+    </script>
+</head>
+<body bgcolor="#f0f8ff">
+<form  name="formradio">
+    Pilih warna latar:
+    <br/>
+    <input  type="radio" name="warna" onclick="ubahWarnaLatar(this.form)" value="#0099CC"/> dark cyan <br/>
+    <input  type="radio" name="warna" onclick="ubahWarnaLatar(this.form)" value="#339966"/> teal <br/>
+    <input  type="radio" name="warna" value="#FF00FF"/> magenta <br/>
+    <input  type="radio" name="warna" value="#FFFF66"/> light yellow <br/>
+    <input  type="radio" name="warna" value="#FF9933"/> light orange <br/>
+    <br/>
+    <input type="button" value="Klik untuk ganti warna" onclick="ubahWarnaLatar(this.form);"/>
+    <input type="reset"/>
+</form>
+</body>
+</html>
