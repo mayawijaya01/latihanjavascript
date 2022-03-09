@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 22</title>
+    <script>
+        function jadwal(jwl) {
+            if (jwl.menu1.selectedIndex==0){
+                jwl.teks1.value="TKI203, Feb 3-7, jam 9 - 5, ruangan 401, pak seto"
+            }
+            if (jwl.menu1.selectedIndex==1){
+                jwl.teks1.value="TKI208, Feb 10-13, jam 9 - 5, ruangan 335, pak Andi"
+            }
+            if (jwl.menu1.selectedIndex==2){
+                jwl.teks1.value="TKI215, Feb 15-19, jam 9 - 5, ruangan 335, Bu Enny"
+            }
+            if (jwl.menu1.selectedIndex==3){
+                jwl.teks1.value="TKI211, Feb 21-25, jam 9 - 5, ruangan 335, Bu Fitri"
+            }
+        }
+    </script>
+</head>
+<body>
+<div align="center">
+<form name="form1">
+    Pilih Matakuliah
+    <br/><br/>
+    <select name="menu1" size="2" onchange="jadwal(this.form)">
+        <option name="pilihan1" value="java">pemrograman java</option>
+        <option name="pilihan2" value="laravel">pemrograman laravel</option>
+        <option name="pilihan3" value="php">pemrograman php</option>
+        <option name="pilihan4" value="js">pemrograman javascript</option>
+    </select>
+    <br/><br/>
+    <input type="text" name="teks1" size=65/>
+</form>
+</div>
+</body>
+</html>

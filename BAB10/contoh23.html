@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 23</title>
+    <script>
+        function tampilkan(form) {
+            var pilihan="";
+            for (i=0; i<form.liburan.options.length; i++){
+                if (form.liburan.options[i].selected==true){
+                    pilihan += form.liburan.options[i].text+"\n";
+                }
+            }
+            alert(pilihan);
+        }
+    </script>
+</head>
+<body>
+<form name="form1" onSubmit="tampilkan(this);"/>
+Kemana Anda akan pergi?
+<br/>
+<select name="liburan" size=4 multiple>
+    <option>kuta</option>
+    <option>nusa dua</option>
+    <option>monas</option>
+    <option>ancol</option>
+    <option>dufan</option>
+    <option>taman mini</option>
+</select>
+<p></p>
+<input type="submit"/>
+<input type="reset"/>
+</form>
+</body>
+</html>
