@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 27</title>
+   <script>
+       function validasi(form) {
+           if (alfa(form.depan)==false){
+               alert("Nama depan tak valid");
+               return false;
+           }
+           if (alfa(form.belakang) == false){
+               alert("Nama belakang tak valid");
+               return false;
+           }
+           return true;
+       }
+       function alfa(bidangTeks) {
+           if (bidangTeks.value.length !=0){
+               for (var i = 0; i< bidangTeks.value.length; i++){
+                   var ch= bidangTeks.value.charAt(i);
+                   //alert(ch); menggunakan alert utk melihat apakah karakter2 ada
+                   if ((ch < "A" || ch > "Z") && (ch < "a" || ch > "z")){
+                       return false;
+                   }
+               }
+
+           }
+           else {
+               return true;
+           }
+       }
+   </script>
+</head>
+<body>
+<form name="periksa_alfa" onsubmit="return validasi(this);">
+    Msukan nama Anda:
+    <br>
+    <input name="depan" type="text" size="60"> <p>
+    Masukan nama belakang Anda:
+    <br>
+    <input name="belakang" type="text" size="60"> <p>
+    <input type="submit" value="periksa">
+    <input type="reset">
+</form>
+</body>
+</html>
