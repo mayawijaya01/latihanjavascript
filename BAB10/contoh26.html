@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 26</title>
+    <script>
+        function periksaForm(info_anda) {
+            if (info_anda.nama_string.value == "" || info_anda.nama_string.value == null){
+                //memeriksa string kosong atau nilai null
+                alert("Silahkan ketikan nama Anda");
+                return (false);
+            }
+            else {
+                return (true);
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="info" action="uji_form.php" method="post" onsubmit="return periksaForm(this);">
+    <p></p>
+    ketikan nama Anda di sini:
+    <input type="text" name="nama_string" size="50">
+    <br>
+    <br>
+    <input type="submit" value="Submit"/>
+    <input type="reset" value="Clear"/>
+</form>
+</body>
+</html>
