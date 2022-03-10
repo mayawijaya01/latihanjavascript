@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 25</title>
+    <script>
+        function periksa(f) {
+            var str="";
+            for (var i = 0; i < f.topping.length; i++){
+                if (f.topping[i].checked){
+                    str += f.topping[i].value + "\n";
+                }
+            }
+            f.pesanan.value=str; //menempatkan nilai str ke area teks
+        }
+        function OK(formKu) {
+            var hasil = confirm("Apakah Anda jadi memesan? ");
+            if (hasil == true){
+                document.formKu.submit();
+            }
+            else { return false}
+        }
+    </script>
+</head>
+<body bgcolor="orange">
+<table border="2">
+    <tr><td><b>kotak periksa</b></td></tr>
+</table>
+<strong>
+    <form name="kotak_periksa" method="post" action="uji_form.php">
+        Pilih topping untuk pizza: <p></p>
+        <input type="checkbox" name="topping" value="tomat"/>Tomat
+        <br/>
+        <input type="checkbox" name="topping" value="salami"/>Salami
+        <br/>
+        <input type="checkbox" name="topping" value="sosis"/>Sosis
+        <br/>
+        <input type="checkbox" name="topping" value="daging"/>Daging
+        <br/>
+        <input type="checkbox" name="topping" value="bakso"/>bakso
+        <br/>
+        <input type="checkbox" name="topping" value="jamur"/>Jamur
+        <br/>
+<p> <small>
+        Topping Pizza
+    <br/>
+    <textarea name="pesanan" rows="6" cols="35" onfocus="JavaScript: periksa(this.form);">
+        Klik di sini untuk memesan!!
+    </textarea>
+    <p></p>
+        panggil pizza man untuk memesan!
+        <br/>
+        <input type=image src="pizza.jpg" height="30%" width="30%" onclick="JavaScript:return OK(this.form);"/>
+        <br>
+        <input type="reset" value="Bersihin form"/>
+    </small>
+    </form>
+</strong>
+</body>
+</html>
