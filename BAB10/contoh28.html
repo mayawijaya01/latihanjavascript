@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 28</title>
+  <script>
+    function email(form) {
+      if (form.alamat.value.indexOf("@") != -1 && form.alamat.value.indexOf(".") != -1){
+          alert("Alamat OK!!");
+          return true;
+      }
+      else {
+          alert("Alamat tidak valid");
+          return false;
+      }
+    }
+  </script>
+</head>
+<body>
+<div align="center">
+    <form name="periksa_email" action="uji_form.php" method="post" onsubmit="return email(this);">
+        Masukan alamat email Anda:
+        <p>
+        <input type="text" name="alamat" size=60/>
+        <p></p>
+        <input type="submit" value="periksa"/>
+        <input type="reset">
+    </form>
+</div>
+</body>
+</html>
