@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 2</title>
+</head>
+<body>
+<h2>objek link dan propertinya</h2>
+<a href="http://search.yahoo.com/bin/search?p=JavaScripttutorial">
+    Mencari materi JavaScript
+</a>
+<p><a href="https://www.google.com/?hl=id">Ke Google</a></p>
+<p><a href="https://www.bing.com/">Ke bing</a></p>
+<script>
+    document.write("<br/>Dokumen ini memuat sebanyak " + document.links.length + " link.<br/>");
+        for (i=0; i < document.links.length; i++){
+            document.write("documen.link["+i+"]:<br/>");
+            document.write("hostname: "
+                + document.links[i].hostname + "<br/>");
+            document.write("href: "
+                + document.links[i].href + "<br/>");
+            document.write("pathname: "
+                + document.links[i].pathnam + "<br/>");
+            document.write("port: " + document.links[i].port + "<br/>");
+            document.write("string queri: " + document.links[i].search + "<br/>");
+            document.write("protocol: " + document.links[i].protocol + "<br/>");
+        }
+</script>
+</body>
+</html>
