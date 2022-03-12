@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 4</title>
+    <script>
+        var citraKu = new Array("kucingabu.jpg", "kucingHP.jpg", "kucingorange.jpg",
+                                "kucingputih.jpg", "kucingtelon.jpg");
+        nil_indeks = 0;
+        function citra_brktnya() {
+            nil_indeks++;
+            if (nil_indeks < citraKu.length){
+                document.images["gbrkucing"].src = citraKu[nil_indeks];
+            }
+            else {
+                nil_indeks = 0;
+                document.images["gbrkucing"].src = citraKu[nil_indeks];
+            }
+        }
+        function citra_sblmnya() {
+            nil_indeks--;
+            if (nil_indeks >= 0){
+                document.images["gbrkucing"].src = citraKu[nil_indeks];
+            }
+            else {
+                nil_indeks = citraKu.length - 1;
+                document.images["gbrkucing"].src = citraKu[nil_indeks];
+            }
+        }
+    </script>
+</head>
+<body>
+<div align="center">
+    <h2>Galery kucing</h2>
+    <img name="gbrkucing" id="gbrkucing" src="kucingabu.jpg" width="50%" height="50%">
+    <br>
+    <a href="JavaScript: citra_brktnya()">
+        Lihat kucing yang lain <br/>
+    </a>
+    <a href="JavaScript: citra_sblmnya()">
+        Lihat kucing yang tadi <br/>
+    </a>
+</div>
+</body>
+</html>
