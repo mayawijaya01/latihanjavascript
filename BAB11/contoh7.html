@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 7</title>
+    <script>
+        RumahCitra = new Array(3);
+        for (var i = 0; i< 3; i++){
+            RumahCitra[i] = new  Image();
+        }
+        RumahCitra[0].src = "cat1.jpg";
+        RumahCitra[1].src = "cat2.jpg";
+        RumahCitra[2].src = "cat3.jpg";
+        function acakKu() {
+            var n = RumahCitra.length -1;
+            var angka_acak = Math.floor(Math.random()*(n + 1));
+            document.images["tampil"].src = RumahCitra[angka_acak].src;
+        }
+    </script>
+</head>
+<body>
+<h2> Ini kucingmu?</h2>
+<img name="tampil" id="tampil"
+        src="cat1.jpg" border="5" width="300" height="220"/>
+<form>
+    <input type="button" value="klik di sini" onclick="acakKu()">
+</form>
+</body>
+</html>

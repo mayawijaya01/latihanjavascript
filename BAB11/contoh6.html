@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 6</title>
+  <script>
+      function praMuatCitra() {
+          kucing = new Array() //variabel global
+          kucing[0] = new Image();
+          kucing[0].src ="kucingabu.jpg";
+          kucing[1]= new Image(); // pramuat citra
+          kucing[1].src="kucingHP.jpg";
+      }
+  </script>
+</head>
+<body bgcolor="#90ee90" onload="praMuatCitra();">
+<h2>Ini kucingmu??</h2>
+<a href="#" onmouseover="document.kucing.src=kucing[1].src;"
+   onmouseout="document.kucing.src=kucing[0].src;">
+    <img name="kucing" src="kucingabu.jpg" width="50%" height="50%" />
+</a>
+</body>
+</html>
