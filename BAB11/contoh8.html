@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 8</title>
+    <map name="peta_citra_ku">
+        <area shape="rect" href="bunga5.jpg" onclick="this.href='JavaScript:void(0)';this.disable=true">
+        <area shape="rect" href="bunga4.jpg" onclick="this.href='JavaScript:void(0)';this.disable=true">
+        <area shape="rect" href="bunga3.jpg" onclick="this.href='JavaScript:void(0)';this.disable=true">
+        <area shape="rect" href="bunga2.jpg" onclick="this.href='JavaScript:void(0)';this.disable=true">
+        <area shape="rect" href="bunga1.jpg" onclick="this.href='JavaScript:void(0)';this.disable=true">
+        <area shape="rect" href="bunga4.jpg" onclick="this.href='JavaScript:void(0)';this.disable=true">
+        <area shape="rect" href="bunga2.jpg" onclick="this.href='JavaScript:void(0)';this.disable=true"/>
+        <area shape="default" href="bunga1.jpg"/>
+    </map>
+</head>
+<body>
+<h2>Bunga di tepi jalan</h2>
+<img src="bunga1.jpg" height="50%" width="50%" usemap="#peta_citra_ku"/>
+<script>
+    var lstr = "<ul>";
+    var pjg = document.links.length -1;
+    for (var i = 1; i < pjg; i++){
+        lstr += "<li><a href=" + document.links[i].href;
+        lstr += ">bunga" + i + "<a/>\n";
+    }
+    lstr += "</ul>";
+    document.write(lstr);
+</script>
+</body>
+</html>

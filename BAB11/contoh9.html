@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 9</title>
+<script>
+    function ingatkan_saya() {
+        alert("Lebar luar dari jendela: "
+                + window.outerWidth+" dan tinggi luar: "
+                + window.outerHeight);
+    }
+    function ubahBumi() {
+        document.images["bumi"].style.height = (document.body.clientHeight - 75)*0.9;
+    }
+</script>
+</head>
+<body onload="ubahBumi();">
+<div style="margin-top: 75px; text-align: center">
+    <img src="bunga1.jpg"
+        name="bumi"
+        alt="gambar bumi"
+        onclick="ingatkan_saya();"/>
+</div>
+</body>
+</html>
