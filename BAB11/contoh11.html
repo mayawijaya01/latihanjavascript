@@ -3,8 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>contoh 11</title>
-</head>
-<body>
+    <script>
+        var timeout;
+        var langkah = 0;
+        var citramana = 0;
+        var planet = new Array();
+        function praMuatCitra() {
+            planet [0]=new Image();
+            planet [0]= "jupiter.jpg";
+            planet [1]=new Image();
+            planet [1]= "neptunus.jpg";
+            planet [2]=new Image();
+            planet [2]= "eart.jpg";
+            planet [3]=new Image();
+            planet [3]= "venus.jpg";
+            planet [4]=new Image();
+            planet [4]= "mars.jpg";
+        }
 
+        function slideShow() {
+            document.images["gambar_planet"].src = planet[langkah];
+            citramana = langkah;
+            if (langkah < planet.length){
+                langkah++;
+            }
+            else {
+                langkah =0;
+            }
+            setTimeout("slideShow()",1800);
+        }
+        function slideLink() {
+            switch (citramana){
+                case 0:
+                    window.location = "https://nasasearch.nasa.gov/search/images?affiliate=nasa&query=jupiter";
+                    break;
+                case 1:
+                    window.location = "https://nasasearch.nasa.gov/search/images?affiliate=nasa&query=neptune";
+                    break;
+                case 2:
+                    window.location = "https://nasasearch.nasa.gov/search/images?affiliate=nasa&query=earth";
+                    break;
+                case 3:
+                    window.location = "https://nasasearch.nasa.gov/search/images?affiliate=nasa&query=venus";
+                    break;
+                case 4:
+                    window.location = "https://nasasearch.nasa.gov/search/images?affiliate=nasa&query=mars";
+                    break;
+            }
+        }
+    </script>
+</head>
+<body bgcolor="black" onload="praMuatCitra(); slideShow()">
+<font color="#f0f8ff">
+    Klik pada planet
+    <br><br>
+    <a href="JavaScript: slideLink()">
+        <img src="eart.jpg" name="gambar_planet" border="0" width="120"/>
+    </a>
+</font>
 </body>
 </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 12</title>
+  <script>
+    function animasi(yangmana) {
+      yangmana %= gbr.length;
+      document.images["terbang"].src=gbr[yangmana];
+      window.setTimeout("animasi("+(yangmana + 1)+");",500);
+    }
+    window.onload = function () {
+      gbr = new Array("b1.jpeg","b2.jpeg","b4.jpeg","b4.jpeg");
+      animasi(0)
+    }
+  </script>
+</head>
+<body>
+<img src="bunga1.jpg" name="terbang"/>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 13</title>
+    <script>
+        function progres() {
+            //menetapkan lebar dari citra setiap .5 detik
+            if (document.images["bar"].width < 500){
+                document.images["bar"].width +=5;
+                document.images["bar"].height = 10;
+                //mempertahankan tinggi agar citra tidak bertambah tinggi ketika citra diperlebar.
+            }
+            else {
+                clearInterval(pewaktu);
+            }
+        }
+        var pewaktu;
+        window.onload = function () {
+            pewaktu = setInterval("progres();",500);
+            //citra ditarik setiap .5 detik
+        }
+    </script>
+</head>
+<body bgcolor="#90ee90">
+<img src="blackbar.png" height="10" name="bar"/>
+<br>
+<p>Amati Progres</p>
+</body>
+</html>
