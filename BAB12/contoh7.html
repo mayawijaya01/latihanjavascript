@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 7</title>
+    <script>
+        function jendelaBaru() {
+            winObj=window.open("minah.jpg", "shin min ah", "width=650, height=200, resizeble = yes, scrollbars=yes, loction=yes");
+            winObj.focus();
+            winObj.blur();
+        }
+        function tutupJendela() {
+            winObj.close();
+        }
+    </script>
+</head>
+<body bgcolor="#faebd7">
+<h2>dia sangat cantik</h2>
+<form>
+    <input type="button" value="Buka Jendela" onclick="JavaScript: jendelaBaru();"/>
+    <input type="button" value="Tutup Jendela" onclick="tutupJendela();"/>
+</form>
+</body>
+</html>
