@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function fokus_saya() {
+            document.bgColor="pink";
+            window.status="fokus framekiri";
+        }
+        function defokus_saya() {
+            parent.kiri.document.bgColor="yellow";
+            window.status="fokus framekanan";
+        }
+    </script>
+</head>
+<body onfocus="fokus_saya()"
+        onblur="defokus_saya()"
+        bgcolor="#90ee90">
+<image src = "minah2.jpg" width="30%" height="30%">
+
+</body>
+</html>

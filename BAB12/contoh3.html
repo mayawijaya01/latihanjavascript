@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 3</title>
+  <script>
+    function periksaForm(infoanda) {
+      if (infoanda.namastring.value == "" || infoanda.namastring.value == null){
+        alert("silahkan masukan nama Anda");
+        return (false);
+      }
+      else {
+        return (true);
+      }
+    }
+  </script>
+</head>
+<body>
+<form name="info" action="form1.php" method="post" onsubmit="return periksaForm(document.info)">
+    <br><br>
+    Ketik nama Anda di sini:
+    <input type="text" name="namastring" size="50"/>
+    <br><br>
+    <input type="submit" value="submit"/>
+    <input type="reset" value="clear"/>
+</form>
+</body>
+</html>

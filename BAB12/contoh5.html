@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 5</title>
+  <script>
+    var det=0;
+    function sekarang() {
+      var tanggalbaru= new Date();
+      var jam= tanggalbaru.getHours();
+      var menit= tanggalbaru.getMinutes();
+      var detik = tanggalbaru.getSeconds();
+      var strwaktu = jam+" : "+menit+ ":"+detik;
+      window.setInterval("jejakWaktu()",1000);
+      alert("dokumen Anda selesai dimuat \n"+ "Waktu: "+strwaktu);
+    }
+    function jejakWaktu() {
+        det++;
+    }
+    function berpaLama() {
+        alert("Anda telah menjelajah di sini selama "+ det +" detik");
+    }
+  </script>
+</head>
+<body background="art.jpg" onload="sekarang()" onunload="berpaLama();">
+ketika Anda meninggalkan atau merefresh halaman ini
+<br>
+sebuah kotak dialog alert akan ditampilkan.
+</body>
+</html>
