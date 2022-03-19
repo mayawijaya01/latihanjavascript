@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>contoh 8</title>
+  <script>
+    function susutLayar() {
+      var lebarBaru=screen.availWidth/2;
+      var tinggiBaru=screen.availHeight/2;
+      window.resizeTo(lebarBaru, tinggiBaru);
+      alert("Labar Layar: " + lebarBaru + " dan tinggi: "+tinggiBaru);
+    }
+    function getDimensi() {
+      if (window.outerWidth){
+        alert("Event onResize: dimensi - dimensi awal layar: "+ screen.availWidth+ " x "+ screen.availHeight+
+                "dimensi - dimensi baru: \n" + window.outerWidth+ " "+window.outerHeight);
+      }
+      else {
+        alert("Event onResize: dimensi - dimensi awal layar: "+screen.availWidth+ " x "+ screen.availHeight+
+                "\n dimensi - dimensi baru: " + document.body.clientWidth + " "+document.body.clientHeight);
+      }
+    }
+  </script>
+</head>
+<body onresize="getDimensi()">
+<form>
+  <input type="button" value="Klik untuk mengubah ukuran jendela"
+            onclick="JavaScript: susutLayar()"/>
+</form>
+</body>
+</html>

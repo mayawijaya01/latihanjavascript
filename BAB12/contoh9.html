@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 9</title>
+  <script>
+    var kounter = 0;
+    function ingatkan_Saya() {
+      alert("saya keluar dari sini!");
+      window.close();
+    }
+    function jejak_perpidahan() {
+      kounter++;
+      if (kounter==1){
+        alert(kounter+ " perpindahan mouse sejauh ini!");
+      }
+    }
+  </script>
+</head>
+<body bgcolor="#f08080" ondblclick="ingatkan_Saya()">;
+<p>klik ganda di mana saja pada halaman ini untuk keluar!!</p>
+<p>klik mouse berada di atas link, event akan dipicu.
+    <a href="#" onmouseover="alert('event:onMouseOver');"/> onMouseOver </a>
+</p>
+<p>klik mouse menjauh dari link, sebuah event akan dipicu.
+    <a href="#" onmouseout="alert('event:onMouseout');"/> onMouseOut </a>
+</p>
+<p>ketika mouse masuk ke dan keluar dari tombol, sebuha fungsi
+    <br>
+dipanggil untuk menjejak berapa kali mouse telah menyentuh tombol.
+    <br>
+<form>
+    <input type="button" value="onMouseMove" onmousemove="jejak_perpidahan()"/>
+</form>
+</p>
+</body>
+</html>
