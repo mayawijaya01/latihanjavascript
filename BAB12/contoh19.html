@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contoh 19</title>
+    <script>
+        var coba = 0;
+        function randomisasi() {
+            //angka acak ditetepkan ketika dokumen dimuat
+            var skrg=new Date();
+            angka=(skrg.getSeconds())%10;
+            angka++;
+        }
+        function tebak(form) {
+            if (form.tbidang.value==angka){
+                alert("benar");
+                form.tbidang.focus();
+                n=0;
+                randomisasi();
+            }
+            else {
+                coba++;
+                alert(coba + " salah. tebak lagi.");
+                form.tbidang.value=="";
+                form.tbidang.focus();
+            }
+        }
+    </script>
+</head>
+<body onload="randomisasi()">
+pilih sebuah angka antra 1 dan 0 <br>
+<form name="formku">
+    <input type="textbox" size="4" name="tbidang"/>
+    <p>
+        <input type="button" name="tombol" value="periksa tebakanmu" onclick="tebak(this.form)"/>
+    </p>
+</form>
+</body>
+</html>

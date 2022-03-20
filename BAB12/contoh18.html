@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh 18</title>
+    <script>
+        function okForm(form) {
+            if (form.terima.checked == true){
+                return true;
+            }
+            else {
+                alert("silahkan periksa kotak!");
+                form.terima.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="form1.php"
+      method="post"
+      onsubmit="return okForm(this)">
+    Nama Anda: <br>
+    <input type="text" name="namaanda">
+    <br>
+    apa yang anda beli hari ini?
+    <br>
+    <input type="radio" name="pilihan" value="burger">burger, kentang dan cola
+    <br>
+    <input type="radio" name="pilihan" value="veggi">sayuran dan air putih
+    <br>
+    terimakasih atas pilihan anda.
+    <br><br>
+    periksa pesanan anda
+    <br>
+    <input type="checkbox" name="terima" value="0"/>
+    <input type="submit" value="silahkan periksa"/>
+    <br><br>
+    <input type="button" value="kembali ke beranda" onclick="window.location.replace('http://localhost/')">
+</form>
+</body>
+</html>
