@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contoh13</title>
+    <script>
+        function tampil_nilform(formku) {
+            alert("nilai kotak teks adalah: "+formku.namastring.value);
+        }
+        function tampil_niltombol(tombolku) {
+            alert("nilai tombol adalah: "+tombolku.value);
+        }
+    </script>
+</head>
+<body>
+<hr>
+<fieldset>
+<form name="form_sederhana">
+    <p>
+    ketikkan nama Anda di sini:
+    <input type="text" name="namastring" size="50">
+    <p>
+    <br>
+    <input type="button"
+        value="Menampilkan Form"
+        onclick="tampil_nilform(this.form);"/>
+    <input type="button"
+        value="Menampilkan Tombol"
+        onclick="tampil_niltombol(this)"/>
+    <input type="reset" value="clear">
+</form>
+</fieldset>
+</body>
+</html>
